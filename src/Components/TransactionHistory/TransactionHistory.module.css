@@ -1,0 +1,19 @@
+.table {
+  margin: 5px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  border-collapse: collapse;
+  color: dimgray;
+}
+
+.head {
+  border: 1px solid grey;
+  background-color: #00c2c2;
+  color: white;
+}
+
+.data {
+  border: 1px solid grey;
+  width: 150px;
+}

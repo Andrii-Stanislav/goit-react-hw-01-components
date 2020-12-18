@@ -1,0 +1,11 @@
+.row {
+  border: 1px solid grey;
+}
+
+.row:nth-child(2n) {
+  background-color: rgb(211, 211, 211);
+}
+
+.data {
+  border: 1px solid grey;
+}
