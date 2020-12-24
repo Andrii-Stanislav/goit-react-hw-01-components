@@ -5,11 +5,13 @@ import styles from './TransactionsItem.module.css';
 
 
 const TransactionsItem = ({ type, amount, currency }) => {
-    return <tr className={styles.row}>
-        <td className={styles.data}>{type}</td>
-        <td className={styles.data}>{amount}</td>
-        <td className={styles.data}>{currency}</td>
-    </tr>
+    return (
+        <tr className={styles.row}>
+            <td className={styles.data}>{type}</td>
+            <td className={styles.data}>{amount}</td>
+            <td className={styles.data}>{currency}</td>
+        </tr>
+    )
 };
 
 TransactionsItem.propTypes = {

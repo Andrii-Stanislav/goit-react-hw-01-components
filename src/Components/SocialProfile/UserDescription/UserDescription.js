@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import styles from './UserDescription.module.css'
 
-const UserDescription = ({ name, tag, location }) => {
-    return <>
+const UserDescription = ({name, tag, location}) => {
+    return (
         <div className={styles.container}>
-            <p className={styles.name}>{ name }</p>
-            <p className={styles.tag}>@{ tag }</p>
-            <p className={styles.tag}>{ location }</p>
+            <p className={styles.name}>{name}</p>
+            <p className={styles.tag}>@{tag}</p>
+            <p className={styles.tag}>{location}</p>
         </div>
-    </>
+    )
 };
 
 UserDescription.propTypes = {

@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import styles from './UserPhoto.module.css'
 
 const UserPhoto = ({ avatar, description }) => {
-    return <>
+    return (
         <div className={styles.container}>
-            <img className={styles.photo} src={ avatar } alt={description} />
+            <img className={styles.photo} src={avatar} alt={description} />
         </div>
-    </>
+    )
 };
 
 UserPhoto.propTypes = {

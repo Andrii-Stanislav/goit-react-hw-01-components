@@ -9,13 +9,13 @@ import UserDescription from './UserDescription/UserDescription';
 import styles from './SocialProfile.module.css';
 
 const SocialProfile = () => {
-    return <>
+    return (
         <div className={styles.container}>
-            <UserPhoto avatar={ avatar } description= { name } ></UserPhoto>
-            <UserDescription name={name} tag={tag} location={location} ></UserDescription>
-            <SocialStats followers={stats.followers} views={stats.views} likes={stats.likes}></SocialStats>
+            <UserPhoto avatar={avatar} description={name} />
+            <UserDescription name={name} tag={tag} location={location} />
+            <SocialStats followers={stats.followers} views={stats.views} likes={stats.likes} />
         </div>
-    </>
+    )
 };
 
 export default SocialProfile;

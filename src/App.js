@@ -12,13 +12,10 @@ import transactions from './Components/TransactionHistory/transactions.json'
 
 const App = () => {
   return <>
-    <TransactionsHistory transactions={ transactions }></TransactionsHistory>
-
-    <FriendList friends={ friends } ></FriendList>
-
-    <Statistics stats={ stats }> </Statistics>
-
-    <SocialProfile> </SocialProfile>
+    <TransactionsHistory transactions={transactions} />
+    <FriendList friends={friends} />
+    <Statistics stats={stats} />
+    <SocialProfile />
   </>
 };
 
