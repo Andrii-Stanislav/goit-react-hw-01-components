@@ -1,6 +1,5 @@
 import React from 'react';
-
-import {name, tag, location, avatar, stats} from './user.json';
+import PropTypes from 'prop-types';
 
 import UserPhoto from './UserPhoto/UserPhoto';
 import SocialStats from './SocialStats/SocialStats';
@@ -8,7 +7,9 @@ import UserDescription from './UserDescription/UserDescription';
 
 import styles from './SocialProfile.module.css';
 
-const SocialProfile = () => {
+const SocialProfile = ({ user }) => {
+    const { name, tag, location, avatar, stats } = user;
+
     return (
         <div className={styles.container}>
             <UserPhoto avatar={avatar} description={name} />
@@ -17,5 +18,9 @@ const SocialProfile = () => {
         </div>
     )
 };
+
+SocialProfile.propTypes = {
+    user: PropTypes.object.isRequired,
+}
 
 export default SocialProfile;
